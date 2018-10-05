@@ -1,19 +1,15 @@
 class Bike
 
-  def initialize
-    @working = true
+  def initialize(working = true)
+    @working = working
   end
 
   def working?
     @working
   end
 
-  def broken?
-    @broken
-  end
-
   def report_broken
-    @broken = true
+    @working = false
   end
 
 end
