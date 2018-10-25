@@ -22,7 +22,6 @@ class DockingStation
   def dock(bike, working = true)
     fail 'The station is full' if full?
     @bikes << bike
-    # if a == false then bike.report_broken
     bike.report_broken if working == false
   end
 
