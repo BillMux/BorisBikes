@@ -35,10 +35,4 @@ class DockingStation
   def full?
     @bikes.length >= @capacity
   end
-
-  # def examine_bikes(selection)
-  #   # puts "There are #{@bikes.length} bike(s) available"
-  #   # puts "Which bike would you like to see?"
-  #   @bikes[selection]
-  # end
 end
