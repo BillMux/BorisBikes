@@ -1,8 +1,7 @@
 require_relative 'bike'
 
 class DockingStation
-  attr_reader :capacity
-  attr_reader :bikes
+  attr_reader :capacity, :bikes
 
   DEFAULT_CAPACITY = 20
 
@@ -11,7 +10,7 @@ class DockingStation
     @capacity = capacity
   end
 
-  def release_bike
+  def release
     fail 'There are no bikes' if empty?
     @bikes.each do |bike|
       fail 'Bike is broken' if bike.working? == false
@@ -32,6 +31,6 @@ class DockingStation
   end
 
   def full?
-    @bikes.length >= @capacity
+    @bikes.length == @capacity
   end
 end
