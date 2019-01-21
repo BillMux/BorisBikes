@@ -1,8 +1,9 @@
 require_relative '../lib/docking_station'
-require_relative '../lib/bike'
+# require_relative '../lib/bike'
 
 class Van
   attr_reader :hold
+  attr_accessor :bikes
 
   def initialize
     @hold = []
