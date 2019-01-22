@@ -44,16 +44,4 @@ describe DockingStation do
       expect(subject.bikes).to eq [@broken_bike]
     end
   end
-
-  #
-  # it 'accepts default capacity' do
-  #   expect(subject)
-  # end
-
-  # it 'should examine the bike' do
-  #   bike = Bike.new
-  #   subject.dock(bike)
-  #   selected_bike = subject.examine_bikes(0)
-  #   expect(selected_bike).to eq(bike)
-  # end
 end
